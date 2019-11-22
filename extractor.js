@@ -29,7 +29,7 @@ function extract()
             JSONparsed = JSON.parse(decompressed);
             document.getElementById("sessions").innerHTML = Object.keys(JSONparsed.sessions).length.toString();
 
-            for (var n in JSONparsed.sessions[n], n);
+            for (var n in JSONparsed.sessions) unpackSession(JSONparsed.sessions[n], n);
             return;
     }
     //document.getElementById("output").innerHTML = res;
